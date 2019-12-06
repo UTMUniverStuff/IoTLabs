@@ -17,6 +17,14 @@ By having 2 such sensors, we can easily measure the angular rotation on the X an
 ## Applications
 Applications of gyroscopes include inertial navigation systems, such as in the Hubble Telescope, or inside the steel hull of a submerged submarine. Due to their precision, gyroscopes are also used in gyrotheodolites to maintain direction in tunnel mining. Gyroscopes can be used to construct gyrocompasses, which complement or replace magnetic compasses (in ships, aircraft and spacecraft, vehicles in general), to assist in stability (bicycles, motorcycles, and ships) or be used as part of an inertial guidance system.
 
+
+# The practical task
+
+For this laboratory task we had to implement a system to display the water level and the temperature.
+
+- for the Water level, we've used the water level sensor
+- for the temperature, we've used the DHT11 sensor (Temperature and Humidity sensor)
+
 ## The actual Arduino thing
 
-![](./imgs/practice.png)
+![wat](./imgs/practice.jpg)

@@ -1,23 +1,24 @@
-#include <LiquidCrystal_I2C.h>
+  
+#define RELAYPIN 7
+#define WATERLEVEL A0
 
-LiquidCrystal_I2C lcd(0x27,20,4);  // set the LCD address to 0x27 for a 16 chars and 2 line display
+const int threshold = 50;
 
 void setup()
 {
-  lcd.init();                      // initialize the lcd 
-  // Print a message to the LCD.
-  lcd.backlight();
-  lcd.setCursor(3,0);
-  lcd.print("Hello, world!");
-  lcd.setCursor(2,1);
-  lcd.print("Ywrobot Arduino!");
-   lcd.setCursor(0,2);
-  lcd.print("Arduino LCM IIC 2004");
-   lcd.setCursor(2,3);
-  lcd.print("Power By Ec-yuan!");
+    Serial.begin(9600);
+    pinMode(RELAYPIN, OUTPUT);
 }
 
 
 void loop()
 {
+    auto water = analogRead(WATERLEVEL);
+    Serial.println(water);
+
+    if (water >= threshold) {
+        digitalWrite(RELAYPIN, LOW);
+    } else {
+        digitalWrite(RELAYPIN, HIGH);
+    }    
 }
