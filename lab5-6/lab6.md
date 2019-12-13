@@ -26,3 +26,8 @@ I used a WiFi library to connect and use 802.11 network. I hardcoded SSID and pa
 ### Output
 
 ![](./imgs/thingspeak-lab6.png)
+
+
+## Conclusion
+
+With the scripts implemented in the previous laboratory work, we become independent of the IoT thing. We can just put the device somewhere, connected to electricity and WiFi, and read the required data. Furthermore, we can integrate this data with other applications.
