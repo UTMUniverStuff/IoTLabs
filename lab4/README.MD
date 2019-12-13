@@ -16,3 +16,12 @@ In this laboratory work we had to implement a system to display the water level,
 
 * For the pressure, we've used the BMP085 Adafruit sensor.
 * For the LCD display, we've used a mini adapter.
+
+
+## Theory
+
+### I2C
+w
+
+### SPI (Serial Peripheral Interface)
+w
