@@ -1,31 +1,28 @@
 # Communication interfaces
 
 ## Scope of the work
-Understanding the communication interfaces
+Interaction with IoT Cloud.
 
 ## Objectives
-  * How to use I2C
-  * Interact with sensors via I2C
+  * Interact with ThingSpeak platform
+  * Automatic upload of data to the server
+  * Parsing the data from the platform Integrate the data with an application
 
 ## Tasks
-Using the system implemented in the previous lab, add a way to display data on an LDC16x02 connected via
-interface I2C.
-Also connect one pressure sensor to the same I2C interface.
-
-All the sensor data should be displayed on the LCD.
+Create account on ThingsPeak. Create one channel with 4 fields, that describes the system in the last laboratory work. Make a script that simulates automatic publishing of the data on this channel and one script that fetches and parses the data from the cloud.
 
 ## Available materials
-  * Arduino Nano v3.0 (Atmega328p)
-  * SRD-05VDC
-  * 5v electric pump
-  * Water level sensors
-  * LCD16x02
-  * atmospheric pressure sensor
+  * https://thingspeak.com/
 
-## Theory
+## Implementation
+I made 2 python scripts: reader and writer.
 
-### I2C
-I2C is a serial protocol that lets multiple low power devices connect to each other, via one two-wire bus.
-It is very simple to use.
+The reader continuously prints the last feed, continuously, every 5 seconds.
 
-![](./imgs/oof.jpg)
+The writer allows writing data to ThingSpeak through program arguments.
+
+![](./imgs/thingspeak.png)
+
+![](./imgs/out.png)
+
+![](./imgs/twitter.png)
