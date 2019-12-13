@@ -15,14 +15,8 @@ Make your board connect to 802.11 network. Connect sensors and actuators from th
 WEMOS LOLIN32 ESP 32, Water level sensor, DTH11 temperature & humidity sensor, relay, pump, wires.
 
 ## Implementation
+![](./imgs/lab6-schema.png)
 
-### Schema
-
-![](./imgs/lab6-schema.png )
-
-### Technical
 I used a WiFi library to connect and use 802.11 network. I hardcoded SSID and password of the WiFi strings and just called `WiFi.begin(ssid, password)`. Then I used HTTPClient class to send a http request to the cloud with the data I’ve collected from the sensors.
-
-### Output
 
 ![](./imgs/thingspeak-lab6.png)
